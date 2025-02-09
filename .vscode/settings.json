@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "powershell.codeFormatting": {
+    "useCorrectCasing": true,
+    "alignPropertyValuePairs": true,
+    "trimWhitespace": true,
+    "placeOpenBraceOnNewLine": false,
+    "placeCloseBraceOnNewLine": false,
+    "indentationSize": 2,
+    "indentStyle": "Space",
+    "newLineAfterOpenBrace": true
+  } 
+}
