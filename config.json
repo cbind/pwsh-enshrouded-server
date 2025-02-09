@@ -1,6 +1,6 @@
 {
   "processName": "enshrouded_server",
-  "serverConsoleExe": "X:\\Programme\\EnshroudedServer\\enshrouded_server.exe",
   "serverFilesPath": "X:\\Programme\\EnshroudedServer",
+  "serverConsoleExe": "X:\\Programme\\EnshroudedServer\\enshrouded_server.exe",
   "backupFoldersCount": 1000
 }
