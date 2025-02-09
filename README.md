@@ -5,7 +5,7 @@ I created this repository just for fun. Feel free to use or change it.
 
 ## Before getting started
 
-1. Download [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) and add the cmdlet to your path environment
+1. Install [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) and add the cmdlet to your path environment
 2. If you are not allowed to execute Powershell scripts, run Powershell as an administrator and execute the following command
     ```pwsh
     Set-ExecutionPolicy Bypass -Scope Process -Force
