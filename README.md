@@ -49,6 +49,8 @@ If you're running the server in your home it is maybe recommended to configure D
 
 Install the server by running the powershell script `.\install.ps1` in your Powershell. If the script is executing successfully, you should see the server files in your configured `serverFilesPath` location.
 
+You have to start the `enshrouded_server.exe` file inside the server installation location once because it creates some other files like the `enshrouded_server.json`.
+
 ## Server Configuration
 
 After installing the server you can configure the server before you start it first. Inside the `serverFilesPath` location there is a `enshrouded_server.json` file you can edit. 
@@ -58,6 +60,23 @@ Recommended settings are:
 
 - Name
 - Password for Default user group
+- Maximum Server slots
+
+Add a default access group to protect the server for foreign access.
+
+```json
+"userGroups": [
+  {
+    "name": "Friend",
+    "password": "<your-password-here>",
+    "canKickBan": false,
+    "canAccessInventories": true,
+    "canEditBase": true,
+    "canExtendBase": true,
+    "reservedSlots": 0
+  }
+]
+```
 
 ## Running the scripts manually
 

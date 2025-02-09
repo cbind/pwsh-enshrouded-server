@@ -17,6 +17,8 @@ $processName = $config.processName
 Write-Host ""
 Write-Host "## STOPPING ENSHROUDED SERVER"
 Write-Host "------------------------------------"
+Write-Host "Process name: $processName"
+Write-Host ""
 
 # Start the process in the background
 try {

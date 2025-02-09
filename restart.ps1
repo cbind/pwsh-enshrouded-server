@@ -11,6 +11,7 @@ if (!(Test-Path $configFilePath)) {
 $config = Get-Content -Raw -Path $configFilePath | ConvertFrom-Json
 
 # Variables
+$appID = "2278520"
 $processName = $config.processName
 $serverFilesPath = $config.serverFilesPath
 $serverConsoleExe = $config.serverConsoleExe
@@ -106,6 +107,10 @@ try {
     Write-Log -Message "Deleting folder: '$($folder.FullName)'"
     Remove-Item -Path $folder.FullName -Recurse -Force
   }
+
+  # Run SteamCMD to update the Enshrouded Dedicated Server
+  Write-Log -Message "Updateing server"
+  Start-Process -FilePath "steamcmd" -ArgumentList "+force_install_dir `"$serverFilesPath`" +login anonymous +app_update $appID validate +quit" -NoNewWindow -Wait
 
   # Starting the server
   Write-Log -Message "Starting server"
