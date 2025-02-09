@@ -59,7 +59,7 @@ I recommend to NOT CHANGE the IP and Port if you dont know what you are doing.
 Recommended settings are:
 
 - Name
-- Password for Default user group
+- Password for a user group
 - Maximum Server slots
 
 Add a default access group to protect the server for foreign access.
